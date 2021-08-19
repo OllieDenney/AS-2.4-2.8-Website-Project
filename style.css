@@ -1,9 +1,14 @@
 * {
-
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  box-sizing: border-box;
 }
 
 #showcase {
-  background-image:url(Basecamp-Adventures-Queenstown-Boulder-cave-e1563589189907.jpg);
+  background-image:url(images/dystopia-background.jpg);
   background-size:cover;
   background-position:center;
   height:100vh;
@@ -12,5 +17,189 @@
   justify-content:center;
   align-items:center;
   text-align:center;
-  padding:0 20px;
+  padding:0;
+  margin: 0;
+}
+
+#header-banner-ad {
+  padding:20px;
+  background:#ffffff;
+  text-align:center;
+  color: #000000;
+}
+
+.sales-section {
+  background: radial-gradient(#595959, #303030);
+  padding-top: 1%;
+  padding-bottom: 2%;
+
+}
+
+.sales-container {
+  display: flex;
+  flex-flow: row;
+  width: 80%;
+  height: 200%;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.sales-1, .sales-2, .sales-3 {
+  clip-path: polygon(0% 0%, 95% 0%, 100% 5%, 100% 100%, 5% 100%, 0 95%);
+  height: 100%;
+  width: 33.30%;
+  background-color: darkgrey;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-bottom: 5%;
+  background: linear-gradient(45deg,#0d0232 0%,#5f0090 50%,#1467ab 100%);
+  box-shadow: 5px 10px #888888;
+  position: relative;
+  box-shadow: 20px 25px 50px -25px #000;
+}
+
+.sales-1:hover, .sales-2:hover, .sales-3:hover {
+  margin-top: -2%;
+}
+
+.sales-1, .sales-3 {
+  background: linear-gradient(45deg,#0d0232 0%,#5f0090 50%,#1467ab 100%);
+}
+
+.sales-2 {
+  background: linear-gradient(45deg,#ff124f 0%,#ff00a0 50%,#fe75fe 100%);
+}
+
+
+.sales-image {
+  width: 100%;
+  filter: drop-shadow(0 0 30px #333);
+}
+
+.sales-content {
+  background-color: transparent;
+  border: 2px solid #97DFFC;
+  margin-top: 00%;
+  width: 80%;
+  margin: auto;
+  padding: 2%;
+}
+
+.sales-header {
+  margin-top: 0%;
+  font-size: 25px;
+  text-align: center;
+  font-style: italic;
+}
+
+.sales-paragraph {
+  font-size: 10px;
+  margin: 5%;
+  text-align: center;
+  color: black;
+}
+
+.sales-button {
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+}
+
+.who-are-we-section {
+  padding: 80px 0 100px;
+  position: relative;
+}
+
+.who-are-we-container {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.who-are-we-header {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  background: rgb(34,193,195);
+  background: linear-gradient(to top, rgba(247, 37, 133,0) 0%, rgba(247, 37, 133) 50%, rgba(247, 37, 133,0) 100%);
+  padding: 10px 0;
+}
+
+.who-are-we-row {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: black;
+
+}
+
+.who-are-we-column {
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 100px;
+}
+
+.who-are-we-image {
+  position: relative;
+  width: 300px;
+
+}
+
+.who-are-we-para {
+  font-size: 15px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.stats-row {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  padding: 80px 40px 20px 40px;
+
+}
+
+.stats-column {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.stats-box {
+  text-align: center;
+  width: 33.335;
+}
+
+.stats-number {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.stats-text {
+  font-size: 15px;
+}
+
+#social-contacts {
+  display:flex;
+  width: 100%;
+}
+
+
+#social-contacts .box-1, #social-contacts .box-3{
+  background:#649ed9;
+  color:#fff;
+  text-align: center;
+  width: 33.33%;
+  padding: 10vh 0;
+}
+
+#social-contacts .box-2{
+  background-image:url(Basecamp-Adventures-Colour-Gradient-Small-70.png);
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 33.33%;
 }
