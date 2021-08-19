@@ -149,7 +149,7 @@
 }
 
 .who-are-we-para {
-  font-size: 15px;
+  font-size: 18px;
   padding-top: 20px;
   padding-bottom: 10px;
 }
@@ -197,9 +197,43 @@
 }
 
 #social-contacts .box-2{
-  background-image:url(Basecamp-Adventures-Colour-Gradient-Small-70.png);
+  background-image:url(logo);
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
   width: 33.33%;
+}
+
+/* CONTACT PAGE CSS */
+
+
+.contact-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+
+.form-break {
+  height: 4px;
+  border-width: 500px;
+  color: gray;
+  background-color: rgba(247, 37, 133);
+}
+
+.form-input {
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
 }
