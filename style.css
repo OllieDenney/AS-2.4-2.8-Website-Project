@@ -7,25 +7,37 @@
   box-sizing: border-box;
 }
 
-#showcase {
-  background-image:url(images/dystopia-background.jpg);
-  background-size:cover;
-  background-position:center;
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:0;
+.catchphrase {
+  background-image: url(images/dystopia-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
   margin: 0;
 }
 
-#header-banner-ad {
+.catchphrase div {
+  margin-left: 60%;
+  color: white;
+  transform: skew(15deg)
+}
+
+.header-banner-ad {
   padding:20px;
-  background:#ffffff;
   text-align:center;
-  color: #000000;
+  color: white;
+  font-size: 90px;
+  transform: skew(-15deg);
+  margin: 2% 5%;
+  background-image: url(images/free_trial_image.gif);
+  background-size: cover;
+  background-position: center;
+
 }
 
 .sales-section {
@@ -233,7 +245,18 @@
 }
 
 .form-input {
-  border-width: 3px;
-  border-style: solid;
-  border-color: black;
+
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
