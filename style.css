@@ -7,6 +7,118 @@
   box-sizing: border-box;
 }
 
+.faded-nav {
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(90deg, transparent 0%, black 100%);
+  z-index: 998;
+}
+
+.dropdown-menu {
+  margin-top: 0%;
+  margin-left: 1.8%;
+  background-color: #Db00B6;
+  background-image: url(images/nav-tab-background.png);
+  background-size: cover;
+  border-style: outset;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  border-right-color: #E500A4;
+  border-bottom-color: #D100D1;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 5px;
+  width: 10%;
+  color: white;
+  text-align: center;
+  padding: 1%;
+  position: fixed;
+  z-index: 999;
+  width: 12.3%;
+}
+
+.dropdown-menu:hover {
+  transform: scale(1.05);
+}
+
+.flex-container {
+  padding-top: 10%;
+  display: flex;
+  flex-wrap: column;
+  width: 15%;
+  height: 100%;
+  background-color: rgba(209, 0, 255, 0.6);
+  position: fixed;
+  margin-left: 0%;
+  z-index: 997;
+  justify-content:center;
+  background-image: url(images/nav-overlay.png);
+  background-repeat: no-repeat;
+  background-size: 140% 80%;
+}
+
+.nav-tab {
+  width: 100%;
+  height: 15%;
+  background-color: #Db00B6;
+  background-image: url(images/nav-tab-background.png);
+  transform: skew(-15deg) rotate(-15deg);
+  border-style: outset;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  border-right-color: #E500A4;
+  border-bottom-color: #D100D1;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  text-align: center;
+  background-size: cover;
+
+}
+
+.nav-tab:hover {
+  transform: scaleX(-100px);
+  transform: scaleY(-100px);
+  transition-duration: 2s;
+  transform: skew(-15deg) rotate(-15deg);
+}
+
+.nav-contact {
+  height: 100%;
+  width: 100%;
+}
+
+.contact-details {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  position: fixed;
+  margin-left: 1.5%;
+  margin-top: 12%;
+}
+
+.social-media {
+  height: 10%;
+  width: 100%;
+}
+
+.instagram-social {
+  background-image: url(instagram-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.img-div {
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  padding: 10 10 10 10;
+}
+
 .catchphrase {
   background-image: url(images/dystopia-background.jpg);
   background-size: cover;
@@ -193,6 +305,40 @@
 .stats-text {
   font-size: 15px;
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+
+.saleheader {
+  font-size: 250%;
+  text-align: center;
+  padding: 20px 30px;
+  color: black;
+}
+
+.gridheader {
+  font-size: 70%;
+}
+
+.gridtext {
+  font-size: 50%;
+}
+
 
 #social-contacts {
   display:flex;
