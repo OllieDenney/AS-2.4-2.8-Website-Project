@@ -143,12 +143,13 @@
   padding:20px;
   text-align:center;
   color: white;
-  font-size: 90px;
+  font-size: 30px;
   transform: skew(-15deg);
   margin: 2% 5%;
   background-image: url(images/free_trial_image.gif);
   background-size: cover;
   background-position: center;
+  height: 80px;
 
 }
 
@@ -304,6 +305,68 @@
 
 .stats-text {
   font-size: 15px;
+}
+
+.middle-image-break {
+  margin-top: 10px;
+  background-image: url(images/man-with-vr-1.jpg);
+  height: 30vh;
+  margin-right: 10px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.middle-image-break h1 {
+  float: left;
+  margin-left: 15%;
+  margin-top: 5%;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+
+}
+
+.neon-text {
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+
+@keyframes flicker {
+
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #ff00e7,
+      0 0 80px #ff00e7,
+      0 0 90px #ff00e7,
+      0 0 100px #ff00e7,
+      0 0 150px #ff00e7;
+
+  }
+
+  20%, 24%, 55% {
+      text-shadow: none;
+  }
+}
+
+.large-italic {
+  font-style: italic;
+  font-size: 50px;
 }
 
 
