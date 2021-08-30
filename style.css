@@ -308,7 +308,7 @@
 }
 
 .middle-image-break {
-  margin-top: 10px;
+  margin-top: 20px;
   background-image: url(images/man-with-vr-1.jpg);
   height: 30vh;
   margin-right: 10px;
@@ -319,10 +319,14 @@
   background-attachment: fixed;
 }
 
-.middle-image-break h1 {
+.middle-ad {
+  display: flex;
+  align-items: center;
+}
+
+.middle-ad h1 {
   float: left;
-  margin-left: 15%;
-  margin-top: 5%;
+  margin-left: 10%;
   font-size: 30px;
   text-align: center;
   color: #fff;
@@ -367,6 +371,11 @@
 .large-italic {
   font-style: italic;
   font-size: 50px;
+}
+
+.large-bold {
+  font-size: 80px;
+  font-weight: bolder;
 }
 
 
