@@ -597,31 +597,137 @@
 	animation: flicker 1.5s alternate;
 }
 
+
 /* Footer Section */
 
 
+.find-us-section {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	color: white;
+	background: linear-gradient(0deg, rgba(47,47,47,1) 19%, rgba(237,37,240,1) 100%); /*change colour to section above backround color*/
+	font-size: 20px;
+}
 
-#social-contacts {
+.find-us-section div {
+	padding: 10px;
+}
+
+.footer-container {
   display:flex;
   width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgba(47,47,47,1);
 }
 
 
-#social-contacts .box-1, #social-contacts .box-3{
-  background:#649ed9;
+.footer-left, .footer-right  {
+  background:rgba(47,47,47,1);
   color:#fff;
   text-align: center;
-  width: 33.33%;
-  padding: 10vh 0;
+  padding: 20px;
+}
+.footer-left {
+	width: 450px;
 }
 
-#social-contacts .box-2{
-  background-image:url(logo);
-  background-color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 33.33%;
+.footer-middle{
+  background-color: rgba(47,47,47,1);
 }
+
+.footer-left-container {
+	width: 200px;
+	height: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+
+
+.info-column {
+	display: flex;
+	width: 200px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 200px;
+	text-align: left;
+}
+
+.info-name {
+	height: 50px;
+	width: 80%;
+	font-weight: bolder;
+	font-size: 30px;
+	font-style: italic;
+}
+
+.info-break {
+	width: 60%;
+	height: 0.5px;
+	background-color: white;
+	margin: 10px 0;
+}
+
+.info-title {
+	height: 20px;
+	width: 80%;
+	font-size: 12.5px;
+}
+
+.info-location {
+	height: 70px;
+	width: 80%;
+	font-size: 14px;
+}
+
+.footer-nav {
+	display: flex;
+	flex-direction: row;
+	width: 410px;
+	margin-top: 15px;
+	padding-left: 30px;
+}
+
+.footer-nav-column {
+	width: 100px;
+	margin: 0 20px;
+}
+
+.footer-nav-header {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.footer-nav-items {
+	line-height: 25px;
+	font-size: 10px;
+}
+
+.footer-nav-break {
+	width: 100%;
+	height: 0.5px;
+	background-color: white;
+	margin: 10px 0;
+}
+
+.footer-tags {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	font-size: 10px;
+	color: white;
+	background-color: rgba(47,47,47,1);
+	padding-bottom: 20px;
+}
+
 
 /* CONTACT PAGE CSS */
 
