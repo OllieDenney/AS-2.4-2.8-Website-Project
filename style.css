@@ -409,43 +409,35 @@
 .mobile-protection {
   background-image: url(images/malware-warning-phone.png);
   width: 100%;
-  height: 60vh;
+  height: 300px;
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
 }
 
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  background-color: #f1f1f1;
-  padding: 10px;
+.mobile-protection-overlay {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,0) 85%, rgba(0,0,0,1) 100%);
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+.our-com-header {
   text-align: center;
-  padding: 20px 0;
   font-size: 30px;
-  border-radius: 5px;
 }
 
-
-.saleheader {
-  font-size: 250%;
+.our-com-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 300px;
+  justify-content: space-around;
   text-align: center;
-  padding: 20px 30px;
-  color: black;
 }
 
-.gridheader {
-  font-size: 70%;
-}
-
-.gridtext {
-  font-size: 50%;
+.our-com-column {
+  width: 200px;
 }
 
 /* Plans Section*/
@@ -597,6 +589,86 @@
 	animation: flicker 1.5s alternate;
 }
 
+/* Our Communbity Section*/
+
+.our-com-container-header {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 15px 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(63, 193, 255) 40%, rgba(63, 193, 255) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.our-com-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 400px;
+  justify-content: space-around;
+  background: linear-gradient(0deg, rgba(237,37,240,1) 0%, rgb(0, 0, 0) 11%);
+}
+
+.our-com-column {
+  width: 200px;
+  clip-path: polygon(100% 0, 100% 0, 100% 90%, 0% 100%, 0 100%, 0 10%);
+  margin: 40px 0;
+}
+
+.th-image {
+	background-image: url(images/image-placeholder.jpg);
+	width: 200px;
+	height: 300px;
+	display: flex;
+}
+
+.our-com-info {
+	padding-top: 60px;
+}
+
+.our-com-image-overlay {
+	background: linear-gradient(45deg,rgba(13, 2, 50, 0.6) 0%,rgba(95, 0, 144, 0.6) 30%,rgba(20, 103, 171, 0.6) 100%);
+	width: 200px;
+	height: 300px;
+	color: white;
+}
+
+.our-com-image-overlay:hover {
+	background: rgba(13, 2, 50, 0)
+}
+
+.our-com-header {
+	font-size: 25px;
+	text-align: center;
+}
+
+.our-com-subheader {
+	padding-top: 10px;
+	text-align: center;
+	font-size: 12.5px;
+	color: lightgray;
+	font-weight: lighter;
+}
+
+.our-com-break {
+	width: 75%;
+	height: 0.5px;
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.our-com-text {
+	text-align: left;
+	padding: 10px;
+	font-size: 12.5px;
+	color: lightgray;
+	padding-left: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
 
 /* Footer Section */
 
@@ -609,7 +681,7 @@
 	flex-wrap: wrap;
 	align-items: center;
 	color: white;
-	background: linear-gradient(0deg, rgba(47,47,47,1) 19%, rgba(237,37,240,1) 100%); /*change colour to section above backround color*/
+	background: linear-gradient(0deg, rgba(47,47,47,1) 8%, rgba(237,37,240,1) 100%); /*change colour to section above backround color*/
 	font-size: 20px;
 }
 
