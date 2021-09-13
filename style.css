@@ -45,7 +45,8 @@
 .flex-container {
   padding-top: 10%;
   display: flex;
-  flex-wrap: column;
+  flex-wrap: wrap;
+  flex-direction: column;
   width: 15%;
   height: 100%;
   background-color: rgba(209, 0, 255, 0.6);
@@ -79,8 +80,6 @@
 }
 
 .nav-tab:hover {
-  transform: scaleX(-100px);
-  transform: scaleY(-100px);
   transition-duration: 2s;
   transform: skew(-15deg) rotate(-15deg);
 }
@@ -116,7 +115,7 @@
   background-color: grey;
   width: 100%;
   height: 100%;
-  padding: 10 10 10 10;
+  padding: 10px;
 }
 
 .catchphrase {
@@ -308,7 +307,6 @@
 
 .stats-box {
   text-align: center;
-  width: 33.335;
 }
 
 .stats-number {
@@ -868,4 +866,247 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+
+/* Software types section */
+
+.software-types-container {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: skyblue;
+  background: radial-gradient(#595959, #303030);
+}
+
+.software-container-wrapper {
+
+}
+
+.software-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 900px;
+  background-color: black;
+  margin: 30px 0;
+  transform: skew(-15deg);
+
+}
+
+.st-column-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 500px;
+  align-self: auto;
+    background: linear-gradient(45deg,#0d0232 0%,#5f0090 50%,#1467ab 100%);
+}
+
+.st-para-outline {
+  width: 92.5%;
+  border: 5px solid #ff00ee;
+}
+
+.st-para {
+  width: 80%;
+  padding: 40px;
+}
+
+.st-header {
+  font-size: 30px;
+
+}
+
+.st-line {
+  width: 90%;
+  height: 0.5px;
+	background-color: white;
+	margin: 10px 0;
+}
+
+.st-description {
+  font-size: 15px;
+}
+
+.st-column-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 250px;
+  width: 400px;
+  background-color: violet;
+  align-self: auto;
+}
+
+.st-column-2-mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 250px;
+  width: 40%;
+  background-image: url(images/phone-bank-secruity.png);
+  background-size: 300px auto;
+  background-repeat: no-repeat;
+}
+
+.st-features-column {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 50%;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.st-features {
+  font-size: 20px;
+  padding: 10px;
+  color:#42eff5;
+  text-shadow:
+		0 0 7px #42eff5,
+		0 0 10px #42eff5,
+		0 0 21px #42eff5,
+		0 0 42px #3A0CA3,
+		0 0 82px #3A0CA3,
+		0 0 92px #3A0CA3,
+		0 0 102px #3A0CA3,
+		0 0 151px #3A0CA3;
+}
+
+@media only screen and (max-width: 1150px) {
+  .software-container {
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+  }
+
+  .st-column-2 {
+    margin-top: 30px;
+  }
+}
+
+
+/* Sub-Plan Section */
+
+.sub-plan-item-container {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.sub-plan-in-con {
+	order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+	margin: 20px;
+	padding: 30px;
+	text-align: center;
+	background: linear-gradient(45deg,#0d0232 0%,#5f0090 50%,#1467ab 100%);
+	color: white;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+	transform: scale(1);
+	transition: transform 1s;
+	width: 137.5px;
+	height: 270px;
+}
+
+.sub-plan-in-con:hover {
+	transform: scale(1.05);
+	transition: transform 1s;
+}
+
+.sub-plan {
+  /*
+	text-shadow:
+		0 0 7px #e942f5,
+		0 0 10px #e942f5,
+		0 0 21px #e942f5,
+		0 0 42px #3A0CA3,
+		0 0 82px #3A0CA3,
+		0 0 92px #3A0CA3,
+		0 0 102px #3A0CA3,
+		0 0 151px #3A0CA3;
+    */
+ 	font-size: 15px;
+ 	color: #e942f5;
+	margin-bottom: 5%;
+	font-weight: 800;
+}
+
+.sub-plan-description {
+	font-style: italic;
+	font-size: 7.5px;
+}
+
+.sub-plan-price {
+  /*
+	text-shadow:
+		0 0 7px #42eff5,
+		0 0 10px #42eff5,
+		0 0 21px #42eff5,
+		0 0 42px #3A0CA3,
+		0 0 82px #3A0CA3,
+		0 0 92px #3A0CA3,
+		0 0 102px #3A0CA3,
+		0 0 151px #3A0CA3;
+    */
+ 	font-size: 14px;
+ 	color: #42eff5;
+}
+
+.sub-plan-price:hover {
+	animation: flicker 1.5s alternate;
+}
+/*
+@keyframes flicker {
+
+  0%, 22%, 53%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 19px #fff,
+      0 0 80px #ff00e7,
+      0 0 150px #ff00e7;
+
+  }
+
+  20%, 24%, 55% {
+      text-shadow: none;
+  }
+}
+*/
+
+.sub-plan-per-month {
+  /*
+  text-shadow:
+		0 0 7px #42eff5,
+		0 0 10px #42eff5,
+		0 0 21px #42eff5,
+		0 0 42px #3A0CA3,
+		0 0 82px #3A0CA3,
+		0 0 92px #3A0CA3,
+		0 0 102px #3A0CA3,
+		0 0 151px #3A0CA3;
+    */
+ 	font-size: 6px;
+ 	color: #42eff5;
+  font-style: italic;
+}
+
+.sub-plan-text {
+	color: white;
+	padding: 4% 0;
+	font-size: 7.5px;
+	font-weight: bolder;
+	text-shadow: 0px 0px 10px rgb(255, 1, 234);
 }
