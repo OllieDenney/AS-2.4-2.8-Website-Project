@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600;700&display=swap" rel="stylesheet">
     <script src="script.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
@@ -18,9 +21,9 @@
       <div class="faded-nav">
         <a id="dropdown-menu" class="dropdown-menu" onclick="showDiv()">Menu</a>
       	<div id="dropdown" class="flex-container" style="display: none;">
-            <div class="nav-tab" id="nav-tab">Services</div>
-            <div class="nav-tab" id="nav-tab">Products</div>
-            <div class="nav-tab" id="nav-tab">Contact</div>
+            <div class="nav-tab">Services</div>
+            <div class="nav-tab">Products</div>
+            <div class="nav-tab">Contact</div>
             <!--
             <div class="nav-contact">
               <div class="social-media">
@@ -48,16 +51,18 @@
       </div>
     </header>
 
-    <div class="header-banner-ad" href="#">Start a 30 day FREE TRIAL!</div>
+    <div class="header-banner-ad">Start a 30 day FREE TRIAL!</div>
 
     <section class="how-contact-section">
 				<h1 class="how-contact-header">How can you contact us?</h1>
+        <hr class="how-contact-break">
 				<div class="how-contact-row">
           <div class="how-contact-column">
 						<p class="how-contact-para"><strong>CyberNetic</strong> leverages patented technology to offer industry-best protection for your devices. SuperShield, our real-time protection <strong>whitelisting</strong> component, deploys a default-deny approach blocking all unknown applications from running without causing headaches or slowdowns. This is made possible by our global list of known good applications and patented digital signature technology. </p>
 						<p class="how-contact-para">Our antivirus innovations continue to lead the cybersecurity industry with a company that is 0% USA based and fulfilling our mission; provide industry-leading computer, mobile device and business endpoint security that is affordable and easy to manage for everyone.</p>
 						<p class="how-contact-para">Only <strong>Application Whitelisting</strong> can stop Ransomware. There is still time! <br><a href="https://www.pcmatic.com/contact/" target="_blank" title="Speak to a Cybersecurity Professional">Contact us</a> for more information.</p>
 					</div>
+          <hr class="how-contact-break">
 				</div>
 
 			 	<div class="how-contact-stats-row">
@@ -94,13 +99,12 @@
             </div>
 					</div>
 					</div>
-				</div>
 		</section>
 
     <section class="middle-image-break">
       <div class="middle-ad">
         <h1 class="middle-ad-text-left">Stay Safe Online with <br><span class="large-italic">Cybernetic</span></h1>
-        <h1 class="middle-ad-text-right"><span class="large-bold">30% OFF<br></span><div href="#" class="link">Click Here</div></h1>
+        <h1 class="middle-ad-text-right"><span class="large-bold">30% OFF<br></span><a href="#" class="link">Click Here</a></h1>
     </div>
     </section>
 
