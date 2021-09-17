@@ -18,40 +18,40 @@
   </head>
   <body>
     <nav>
-      <div class="faded-nav">
-        <a id="dropdown-menu" class="dropdown-menu" onclick="showDiv()">Menu</a>
-      	<div id="dropdown" class="flex-container" style="display: none;">
-            <div class="nav-tab">Services</div>
-            <div class="nav-tab" >Products</div>
-            <div class="nav-tab">Contact</div>
-            <!--
-            <div class="nav-contact">
-              <div class="social-media">
-                <div class="instagram-social" onclick="location.href='instagram.com';" style="cursor: pointer;">
-                  <img src="images/instagram-logo.png" alt="Instagram logo" width="20%" height="100%">
-                </div>
-                <div class="facebook-social" onclick="location.href='facebook.com';" style="cursor: pointer;">
-                  <img src="images/facebook-logo.png" alt="Facebook logo" width="20%" height="100%">
-                </div>
-              </div>
-              <div class="contact-details">
-                <div class="contact-number">Ph: 0800 748 374</div>
-                <div class="contact-location">Location: ȑ̴̼̞̥̠̋͊̎d̸̪̩̿d̵̻̍̌̈̃r̵̨͓̉̉͜t̴̖̯̃̔͐̀ͅj̴̡͚͈̽͋͜ỷ̶͕̲̯͜f̶̲͝ų̶̲̥̘͂k̶̡̟͈̍̕r̶̗̉̒̎y̸̝̦̱̒͘͘t̷͕̪̾̓͠g̷̘̙͗̍k̶͔͕̣̈́b̸̬̮̯͈̅h̸̗͊ ̴̝̹̎͑/<div>
-              </div>
-            </div>
-          -->
-      	</div>
-      </div>
-    </nav>
-    <header class="catchphrase">
-      <div>
-        <h1>Threats Stopped<br> Endpoints Secured</h1>
-        <p>Cybernetics Total Protection <br>provides anti-virus identity<br> and provide protection</p>
-        <a href="#" class="button">Read More</a>
-      </div>
-    </header>
+		<div id="nav-container" class="nav-container">
+			<div class="home-link" onclick="location.href='index.html';">CyberNetics</div>
+			<div class="nav-right">
+				<div id="sign-in-button-outline" class="sign-in-button-outline">
+					<a id="sign-in-button" class="sign-in-button" href="">SIGN IN</a>
+				</div>
+				<a id="dropdown-menu" class="dropdown-menu" onclick="showDiv()">☰</a>
 
-    <div class="header-banner-ad" >Start a 30 day FREE TRIAL!</div>
+				<div id="dropdown" class="nav-tabs-container" style="display: none;">
+					<div class="nav-tab" onclick="location.href='products.html';">▶ Products</div>
+					<div class="nav-tab" onclick="location.href='contacts.html';">▶ Contact</div>
+          <div class="nav-tab" onclick="location.href='index.html#reviews';">▶ Reviews</div>
+					<div class="nav-tab" onclick="location.href='products.html#directory';">▶ Directory</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+  <section>
+		<div class="header-container">
+			<div class="header-content-container">
+				<div class="header-catchphrase">THREATS <span class="header-catchphrase-important">STOPPED</span></div>
+				<div class="header-catchphrase">ENDPOINTS <span class="header-catchphrase-important">SECURED</span></div>
+				<div class="header-para">Our <span class="header-para-important">Award-Winning</span> software <br>protects over <span class="header-para-important">450,000</span> devices <br>from <span class="header-para-important">Cyber-Attacks</span> each year</div>
+				<div class="header-link-container">
+					<div class="header-products-link-container" onclick="location.href='products.html#plans-we-offer';">
+						<div class="header-products-link">CHECK IT OUT ➜</div>
+					</div>
+					<div class="header-reviews-link-container" onclick="location.href='index.html#reviews';">
+						<div class="header-reviews-link">▷ REVIEWS</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
     <section class="why-use-section">
 				<h1 class="why-use-header">Why are our products so effective?</h1>
@@ -142,7 +142,7 @@
 				</div>
 		</section>
 
-    <section class="products-plans-container">
+    <section class="products-plans-container" id="plans-we-offer">
       <div class="plan-main-header">The Plans We Offer:</div>
         <div class="plans-item-container">
 
@@ -301,9 +301,8 @@
   </section>
 
 
-
   <section>
-    <div class="software-types-container">
+    <div class="software-types-container" id="software-types">
       <div class="hardware-main-header">Why is our hardware so effective?</div>
       <div class="software-container-wrapper">
         <div class="software-container">
@@ -389,13 +388,6 @@
     </div>
   </section>
 
-
-
-
-    <section>
-      <div class="footer-connection"></div>
-    </section>
-
   <footer>
   	<div class="find-us-section">
   		<div>Find us on:</div>
@@ -430,20 +422,20 @@
   			</a>
   		</div>
   	</div>
-        <div class="footer-container">
-          <div class="footer-left">
+    <div class="footer-container">
+      <div class="footer-left">
   			<div class="footer-left-container">
   				<div class="info-column">
-  					<div class="info-name">CyberNetics</div>
+  					<div class="info-name" onclick="location.href='index.html';">CyberNetics</div>
   					<hr class="info-break">
   					<div class="info-title">Coporate Headquarters</div>
-  					<div class="info-location">402 Jervois Quay, Te Aro <br> Wellington, 6012 <br> New Zealand</div>
+  					<div class="info-location" onclick="location.href='https://www.google.com/maps/place/Jervois+Quay,+Wellington+Central,+Wellington+6011/@-41.2870585,174.7760722,17z/data=!3m1!4b1!4m5!3m4!1s0x6d38afd3f81a833d:0x6f9b6f1d2afe3a05!8m2!3d-41.2870585!4d174.7782609';">402 Jervois Quay, Te Aro <br> Wellington, 6012 <br> New Zealand</div>
   				</div>
   				<div class="info-column">
   					<div class="info-name"></div>
   					<hr class="info-break">
   					<div class="info-title">Head Offices</div>
-  					<div class="info-location">6578b Hawthorne Drive<br>Boydtown, Queenstown <br>9304, New Zealand</div>
+  					<div class="info-location" onclick="location.href='https://www.google.com/maps/place/Boydtown+Way,+Queenstown+9300/@-45.0263792,168.6583733,17z/data=!4m5!3m4!1s0xa9d51d77f05bc0fb:0x2bb93bc257b91890!8m2!3d-45.0252494!4d168.6569035';">6578b Hawthorne Drive<br>Boydtown, Queenstown <br>9304, New Zealand</div>
   				</div>
   				<div class="map-column">
   					<div></div>
@@ -452,26 +444,26 @@
   			</div>
   		</div>
           <div class="footer-middle"></div>
-  		<div class="footer-right">
+  		<div id="directory" class="footer-right">
   			<div class="footer-nav">
   				<div class="footer-nav-column">
-  					<div class="footer-nav-header">Contact</div>
+  					<div class="footer-nav-header" onclick="location.href='contacts.html';">Contact</div>
   					<hr class="footer-nav-break">
-  					<div class="footer-nav-items">
+  					<div class="footer-nav-items" onclick="location.href='contacts.html#contact';">
   						<div>Phone</div>
   						<div>Email</div>
   						<div>International</div>
   					</div>
   				</div>
   				<div class="footer-nav-column">
-  					<div class="footer-nav-header">Products</div>
+  					<div class="footer-nav-header" onclick="location.href='products.html';">Products</div>
   					<hr class="footer-nav-break">
-  					<div class="footer-nav-items">
+  					<div class="footer-nav-items" onclick="location.href='products.html#plans-we-offer';">
   						<div>For Individuals</div>
   						<div>For Families</div>
   						<div>For Businesses</div>
   						<div>For Companies</div>
-  						<div>Sales</div>
+  						<div>Individual Software</div>
   					</div>
   				</div>
   				<div class="footer-nav-column">
@@ -479,14 +471,14 @@
   					<hr class="footer-nav-break">
   					<div class="footer-nav-items">
   						<div>Locations</div>
-  						<div>Who Are We</div>
-  						<div>Our Statistics</div>
-  						<div>Types of Secruity</div>
+  						<div onclick="location.href='index.html#who-are-we';">Who Are We</div>
+  						<div onclick="location.href='index.html#stats;">Our Statistics</div>
+  						<div onclick="location.href='products.html#software-types';">Types of Secruity</div>
   					</div>
   				</div>
   			</div>
   		</div>
-        </div>
+      </div>
   	  <div class="footer-tags">
   		<div></div>
   		<div></div>
