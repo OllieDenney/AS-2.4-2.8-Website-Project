@@ -117,7 +117,7 @@
   color: white;
   font-family: 'Encode Sans', sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -307,6 +307,7 @@
 
 .sales-1, .sales-3 {
   background: linear-gradient(45deg,#0d0232 0%,#5f0090 50%,#1467ab 100%);
+  color: white;
 }
 
 .sales-2 {
@@ -326,6 +327,9 @@
   width: 80%;
   margin: auto;
   padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sales-header {
@@ -340,13 +344,21 @@
   font-size: 10px;
   margin: 5%;
   text-align: center;
-  color: black;
+  color: lightgray;
 }
 
 .sales-button {
   background-size: 200% 200%;
   background-repeat: no-repeat;
+  background-color: rgb(255, 153, 0);
+  border: 0;
+  padding: 5px;
+  clip-path: polygon(0% 0%, 95% 0%, 100% 5%, 100% 100%, 5% 100%, 0 95%);
+  border: solid 1px white;
+  font-weight: 600;
+  font-style: italic;
 }
+
 
 .who-are-we-section {
   padding: 40px 0 100px;
@@ -365,7 +377,7 @@
   font-size: 50px;
   text-align: center;
   font-weight: 700;
-  backgroun:  rgba(247, 37, 133);
+  background: rgba(247, 37, 133);
   padding: 10px 0;
   font-family: 'Encode Sans', sans-serif;
 }
@@ -700,7 +712,7 @@
 	padding: 5%;
 	margin: 5% auto;
 	background: radial-gradient(rgb(255, 94, 0), rgb(255, 153, 0));
-    clip-path: polygon(0% 0%, 90% 0%, 100% 30%, 100% 100%, 10% 100%, 0 70%);
+  clip-path: polygon(0% 0%, 90% 0%, 100% 30%, 100% 100%, 10% 100%, 0 70%);
 	color: whitesmoke;
 }
 
@@ -944,7 +956,7 @@
 /* How to contact us section */
 
 .how-contact-section {
-  padding: 80px 0 100px;
+  padding: 40px 0 100px;
   position: relative;
 }
 
@@ -952,7 +964,6 @@
   font-size: 50px;
   text-align: center;
   font-weight: 700;
-  background: rgb(34,193,195);
   padding: 10px 0;
   font-family: 'Encode Sans', sans-serif;
 }
@@ -1157,7 +1168,7 @@
   color: white;
   font-style: italic;
   font-weight: lighter;
-
+  font-family: 'Encode Sans', sans-serif;
 }
 
 .why-use-review-break {
@@ -1265,7 +1276,7 @@
   width: 900px;
   margin: 30px 0;
   transform: skew(-15deg);
-
+  color: lightgrey;
 }
 
 .st-column-1 {
@@ -1291,7 +1302,8 @@
 
 .st-header {
   font-size: 30px;
-
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 600px;
 }
 
 .st-line {
