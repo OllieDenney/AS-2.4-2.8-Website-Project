@@ -341,6 +341,7 @@
 
 .sales-paragraph {
   font-size: 10px;
+  font-weight: 600;
   margin: 5%;
   text-align: center;
   color: lightgray;
@@ -406,6 +407,14 @@
     width: 80%;
     text-align: center;
     padding: 0;
+  }
+
+  .stats-row {
+    flex-wrap: wrap;
+  }
+
+  .stats-column {
+    margin-top: 20px;
   }
 }
 
@@ -971,6 +980,37 @@
   }
 }
 
+@media only screen and (max-width: 600px)  {
+  .footer-left {
+    width: 320px;
+    margin-left: -30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-nav {
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .footer-nav-column {
+    margin-top: 30px;
+  }
+
+  .footer-left-container {
+    flex-direction: row;
+    height: auto;
+  }
+
+  #info-column-mobile {
+    margin-top: -80px;
+    margin-bottom: 0;
+  }
+}
+
 
 /* CONTACT PAGE CSS */
 
@@ -1228,6 +1268,18 @@
 	color: white;
 }
 
+@media only screen and (max-width: 600px) {
+  .why-use-column-2 {
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: wrap;
+  }
+
+  .why-use-review {
+    flex-direction: column;
+  }
+}
+
 .review-image-overlay:hover {
 	background: rgba(13, 2, 50, 0)
 }
@@ -1396,19 +1448,25 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .hardware-main-header {
+    margin-right: 30px;
+  }
+
   .software-container {
     flex-direction: column;
-    width: 500px;
+    width: auto;
     align-items: center;
     justify-content: center;
+    transform: skew(0deg);
   }
 
   .st-column-1 {
-    width: 400px;
+    width: 300px;
+    height: 300px;
   }
 
   .st-para-outline {
-    height: 230px;
+    height: auto;
   }
 
   .st-para {
@@ -1417,8 +1475,13 @@
 
   .st-column-2 {
     margin-top: 30px;
-    margin-left: 90px;
+    width: 350px;
   }
+
+  .st-features-column {
+    flex-direction: column;
+  }
+
 }
 
 
@@ -1441,6 +1504,13 @@
   /*
   animation: flicker 1.5s infinite alternate;
   */
+}
+
+@media only screen and (max-width: 1000px) {
+  .plan-main-header {
+    width: auto;
+  }
+
 }
 
 @keyframes flicker {
