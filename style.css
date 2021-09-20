@@ -776,6 +776,28 @@
 	width: 200px;
 	height: 300px;
 	display: flex;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+#review-1 {
+  background-image: url(images/image-placeholder.jpg);
+}
+
+#review-2 {
+  background-image: url(images/review-2.jpg);
+}
+
+#review-3 {
+  background-image: url(images/review-3.jpeg);
+}
+
+#review-4 {
+  background-image: url(images/review-4.jpeg);
+}
+
+#review-5 {
+  background-image: url(images/review-5.png);
 }
 
 .our-com-info {
@@ -1410,16 +1432,16 @@
   background-repeat: no-repeat;
 }
 
-.st-column-2-mobile {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 250px;
-  width: 400px;
-  align-self: auto;
+#standard {
+  background-image: url(images/social-media-secruity.png);
+}
+
+#premium {
+  background-image: url(images/data-secruity.png);
+}
+
+#mobile {
   background-image: url(images/phone-bank-secruity.png);
-  background-size: 300px auto;
-  background-repeat: no-repeat;
 }
 
 .st-features-column {
