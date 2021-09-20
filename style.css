@@ -1002,10 +1002,6 @@
   .footer-nav {
     padding: 30px 0;
   }
-
-  .in-con {
-    height: 560px;
-  }
 }
 
 @media only screen and (max-width: 600px)  {
@@ -1014,6 +1010,10 @@
     margin-left: -30px;
     align-items: center;
     text-align: center;
+  }
+
+  .in-con {
+    height: auto;;
   }
 
   .footer-nav {
