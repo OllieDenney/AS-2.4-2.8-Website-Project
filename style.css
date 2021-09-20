@@ -626,6 +626,8 @@
 	height: 540px;
 }
 
+
+
 .in-con:hover {
 	transform: scale(1.05);
 	transition: transform 1s;
@@ -999,6 +1001,10 @@
 
   .footer-nav {
     padding: 30px 0;
+  }
+
+  .in-con {
+    height: 560px;
   }
 }
 
